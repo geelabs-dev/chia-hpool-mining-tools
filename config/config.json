@@ -1,0 +1,62 @@
+{
+  "server": {
+    "init": "",
+    "remark": "chia-control",
+    "sshIp": "10.0.0.10",
+    "sshPort": "22",
+    "sshUser": "root",
+    "sshPwd": "Aa987654321"
+  },
+  "miner": [
+    {
+      "remark": "11111@qq.com",
+      "apikey": "chiaog00-1111-1111-1111-6ce57929bf83",
+      "proxy": {"ip": "","port": ""},
+      "device": [
+        {"sshIp": "10.0.0.11","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.12","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.13","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.14","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.15","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"}
+      ]
+    },
+    {
+      "remark": "22222@qq.com",
+      "apikey": "2a3ae646c-2222-2222-2222-338c24bbdef",
+      "proxy": {
+        "ip": "",
+        "port": ""
+      },
+      "device": [
+        {"sshIp": "10.0.0.51","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.52","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.53","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.54","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.55","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.56","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.57","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.58","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.59","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.60","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"}
+      ]
+    },
+    {
+      "remark": "33333@qq.com",
+      "apikey": "2a3ae646c-3333-3333-33333-338c24bbdef",
+      "proxy": {
+        "ip": "",
+        "port": ""
+      },
+      "device": [
+        {"sshIp": "10.0.0.81","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.82","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.83","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.84","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.85","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.86","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.87","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"},
+        {"sshIp": "10.0.0.88","sshPort": "22","sshUser": "root","sshPwd": "Aa123456789"}
+      ]
+    }
+  ]
+}

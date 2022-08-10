@@ -1,27 +1,23 @@
-:::info
-一个有温度的chia集群挖矿管理工具
-:::
 
-NAME='chia-hpool-mining-tool'
-VER='v1.0.0 开源版'
-Miner='HPool-Miner-Chia v1.5.9 (2)'
-Powered='Gee.Labs - 极数实验室'
-Mail='mail@gee-labs.com'
-Discord='[https://discord.gg/za8gAUGdpT'](https://discord.gg/za8gAUGdpT')
-本工具开源发布，欢迎大家二次修改使用，使用中如遇任何问题，请加入Discord官方群组，联系技术人员排查问题
 
 # 名词定义
+
 server机 主控机，也是proxy服务器
+
 miner机 带盘机
 
 # 工具描述
+
 本工具为chia机器接入hpool矿池使用的集群管理工具，解决运维人员日常人工维护工作，拒绝windows误人前程！
 
 ## 适用场景：
+
 机房运营大量chia机器分属不同客户，使用不同hpool账号，运维难度大
 
 ## 集群架构：
+
 1台server机：运行本工具及hpool-proxy服务
+
 N台miner机：运行chia挖矿服务
 
 ## 技术原理：
@@ -49,8 +45,11 @@ chmod +x chia-tools.sh
 ## 设置配置文件
 
 A账号：11111@qq.com 有5台主机，apikey为 chiaog00-1111-1111-1111-6ce57929bf83
+
 B账号：22222@qq.com 有10台主机，apikey为 2a3ae646c-2222-2222-2222-338c24bbdef
+
 C账号：33333@qq.com 有8台主机，apikey为 2a3ae646c-3333-3333-33333-338c24bbdef
+
 
 修改config文件夹下config.json配置文件，可参考以下配置：
 ```bash
@@ -120,29 +119,29 @@ C账号：33333@qq.com 有8台主机，apikey为 2a3ae646c-3333-3333-33333-338c2
 ```
 
 配置server机必填项：（运行本工具的主机）
-:::info
+```info
     "remark": "自定义server机名称", 
     "sshIp": "server机内网ip地址",
     "sshPort": "server机ssh端口，默认22，建议使用",
     "sshUser": "server机ssh用户名，默认root，建议使用",
     "sshPwd": "server机ssh密码"
-:::
+```
 
 miner机配置必填项：（带盘机）
-:::info
+```info
 "remark": "自定义账户名，建议使用hpool登录邮箱或手机，方便识别",
  "apikey": "登录hpool找到chia挖矿apikey，注意区分新老协议",
 {"sshIp": "上述hpool账号下miner机ip","sshPort": "22","sshUser": "root","sshPwd": "ssh密码"}
-:::
+```
 
 ## 初始化miner机
-:::info
+```info
 执行初始化操作会运行以下功能：
 从server机tool目录下载chia-hpool-miner挖矿工具到miner机；
 从server机tool目录下载yq工具到miner机，用于生成miner配置文件；
 
 注：执行本操作可能会较长时间，具体时间视内网传输速度决定。
-:::
+```
 
 **为一台miner机执行初始化：**
 ```bash
@@ -219,22 +218,24 @@ miner机配置必填项：（带盘机）
 ```
 
 ## 更新hpool-chia挖矿工具
-:::info
+```info
 本工具调用hpool工具挖矿，由于hpool存在不定期更新，如需更新挖矿软件，执行以下操作
-:::
+```
 
 更新流程：
 
 1. 停止所有miner挖矿
-1. 下载hpool最新版工具，上传至 tool 文件夹 覆盖原有同名文件
-1. 执行一次初始化操作
-1. 启动所有miner挖矿
+2. 下载hpool最新版工具，上传至 tool 文件夹 覆盖原有同名文件
+3. 执行一次初始化操作
+4. 启动所有miner挖矿
 
 
 # LTS长期支持说明
+
 本工具已列入GeeLabs实验室LTS长期支持计划，我们将持续提供升级技术支持，如果您有更好的建议可与我们联系
 
 联系邮箱：mail@gee-labs.com
+
 Discard：[https://discord.gg/za8gAUGdpT](https://discord.gg/za8gAUGdpT')
 
 
@@ -244,7 +245,13 @@ Discard：[https://discord.gg/za8gAUGdpT](https://discord.gg/za8gAUGdpT')
 
 XCH 赞助地址：xch1gpf8pc6qhnsgt7uwu7yp80k09pwcds3ypc7mkmmtucaezmffxmkq8wt4a7
 
+Powered='Gee.Labs - 极数实验室'
 
+Mail='mail@gee-labs.com'
+
+Discord='[https://discord.gg/za8gAUGdpT'](https://discord.gg/za8gAUGdpT')
+
+本工具开源发布，欢迎大家二次修改使用，使用中如遇任何问题，请加入Discord官方群组，联系技术人员排查问题
 
 
 
